@@ -2,11 +2,20 @@ angular.module('newsApp',[])
 
 .directive('app', function(nytimes) {
   return {
-    controller: function($scope) {
-      $scope.greeting = nytimes.fetch();
+    scope: {
+
     },
+    controller: function() {
+      this.results = ({results}) => {
+        this.nytimesStories = results;
+      };
+      nytimes.fetch(this.results);
+      this.hello = 'hello';
+    },
+    controllerAs: 'ctrl',
+    bindToController: true,
     template: '<div>\
-      {{greeting}}\
+        <story-list></story-list>\
       </div>'
   }
 })
