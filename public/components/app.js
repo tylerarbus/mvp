@@ -15,7 +15,7 @@ angular.module('newsApp',[])
     controllerAs: 'ctrl',
     bindToController: true,
     template: '<div>\
-        <story-list></story-list>\
+        <story-list nytimes-stories=ctrl.nytimesStories></story-list>\
       </div>'
   }
 })

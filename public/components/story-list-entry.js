@@ -1,6 +1,6 @@
 angular.module('newsApp')
 
-.directive('story', function() {
+.directive('storyEntry', function() {
   return {
     scope: {
       story: '<'
@@ -11,7 +11,7 @@ angular.module('newsApp')
     controllerAs: 'ctrl',
     bindToController: true,
     template: '<div>\
-      Inside of story\
+      {{ctrl.story.title}}\
       </div>'
   }
 })
