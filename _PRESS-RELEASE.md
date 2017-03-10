@@ -1,4 +1,4 @@
-# Project Name #
+# News #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,29 +16,44 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+## News ##
+<!--   > Name the product in a way the reader (i.e. your target customers) will understand. -->
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+<!-- ## Sub-Heading ##
+  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title. -->
 
-## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  News will aggregate articles from your favourite publications in a clear and uncluttered interface. 
 
-## Problem ##
-  > Describe the problem your product solves.
+<!-- ## Summary ##
+  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good. -->
 
-## Solution ##
-  > Describe how your product elegantly solves the problem.
+  With News, you can select which publications you wish to subsribe to and view the latest articles. You can also filter for the news categories you are most interested in to keep your feed uncluttered. Simply click on an article to read it.
 
-## Quote from You ##
-  > A quote from a spokesperson in your company.
+<!-- ## Problem ##
+  > Describe the problem your product solves. -->
 
-## How to Get Started ##
-  > Describe how easy it is to get started.
+  With so many news and social media sites competing for your attention, it's easy to lose sight of the news stories that matter to you.
 
-## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+<!-- ## Solution ##
+  > Describe how your product elegantly solves the problem. -->
 
-## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  With a simple and stripped-down interface, News only shows you stories you explicity decide to include in your feed.
+
+<!-- ## Quote from You ##
+  > A quote from a spokesperson in your company. -->
+
+  "News will change your life!" - Tyler Arbus, creator of News.
+
+<!-- ## How to Get Started ##
+  > Describe how easy it is to get started. -->
+  Create an account, select any categories you are interested in, and your feed will be automatically be curated for you.
+
+<!-- ## Customer Quote ##
+  > Provide a quote from a hypothetical customer that describes how they experienced the benefit. -->
+
+  "News will change your life!" - Satisfied customer.
+
+<!-- ## Closing and Call to Action ##
+  > Wrap it up and give pointers where the reader should go next. -->
+
+  Head to http://localhost:2020 to create an account!
