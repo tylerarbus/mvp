@@ -4,7 +4,8 @@ angular.module('newsApp')
   return {
     scope: {
       articles: '<',
-      selectedCategory: '<'
+      selectedCategory: '<',
+      saveStory: '<'
     },
     controller: function() {
 
@@ -12,7 +13,7 @@ angular.module('newsApp')
     controllerAs: 'ctrl',
     bindToController: true,
     template: '<div class="storylist">\
-        <story-entry ng-repeat="story in ctrl.articles" story="story" ng-if="story.category==ctrl.selectedCategory || ctrl.selectedCategory==null" ></story-entry>\
+        <story-entry ng-repeat="story in ctrl.articles" story="story" save-story="ctrl.saveStory" ng-if="story.category==ctrl.selectedCategory || ctrl.selectedCategory==null" ></story-entry>\
       </div>'
   }
 })
