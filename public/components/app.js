@@ -10,13 +10,21 @@ angular.module('newsApp',[])
         this.articles = results;
         this.categories = window.populateCategories(results);
       };
+      this.selectedCategory = null;
+      this.filterCategory = (category) => {
+        if (category !== 'All Categories') {
+          this.selectedCategory = category;
+        } else {
+          this.selectedCategory = null;
+        }
+      };
       nytimes.fetch(this.results);
     },
     controllerAs: 'ctrl',
     bindToController: true,
     template: '<div>\
-        <filters categories=ctrl.categories></filters>\
-        <story-list articles=ctrl.articles></story-list>\
+        <filters categories=ctrl.categories filter-category=ctrl.filterCategory ></filters>\
+        <story-list articles=ctrl.articles selected-category=ctrl.selectedCategory ></story-list>\
       </div>'
   }
 })

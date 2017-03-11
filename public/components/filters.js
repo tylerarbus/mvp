@@ -6,8 +6,8 @@ angular.module('newsApp')
 
     },
     template: '<div class="filters">\
-      <select class="selectCategory">\
-        <option>Select Category</option>\
+      <select class="selectCategory" ng-model="selectedCategory" ng-change="ctrl.filterCategory(selectedCategory)">\
+        <option>All Categories</option>\
         <option ng-repeat="category in ctrl.categories">{{category}}</option>\
       </select>\
       </div>'

@@ -3,7 +3,7 @@ angular.module('newsApp')
 .directive('storyEntry', function() {
   return {
     scope: {
-      story: '<'
+      story: '<',
     },
     controller: function() {
 
