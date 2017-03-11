@@ -1,0 +1,1 @@
+window.news_api_key = '16014dee02c8448c87ea64e05461cd05';

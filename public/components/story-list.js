@@ -3,7 +3,7 @@ angular.module('newsApp')
 .directive('storyList', function() {
   return {
     scope: {
-      nytimesStories: '<'
+      articles: '<'
     },
     controller: function() {
 
@@ -11,7 +11,7 @@ angular.module('newsApp')
     controllerAs: 'ctrl',
     bindToController: true,
     template: '<div class="storylist">\
-        <story-entry ng-repeat="story in ctrl.nytimesStories" story="story" ></story-entry>\
+        <story-entry ng-repeat="story in ctrl.articles" story="story" ></story-entry>\
       </div>'
   }
 })
