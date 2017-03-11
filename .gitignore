@@ -37,3 +37,4 @@ bower_components/
 # API Keys
 /public/config/nytimes_api.js
 /public/config/news_api_key.js
+/public/config/bing-api-key.js

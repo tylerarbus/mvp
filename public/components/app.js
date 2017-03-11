@@ -1,14 +1,14 @@
 angular.module('newsApp',[])
 
-.directive('app', function(nytimes, newsapi) {
+.directive('app', function(nytimes, newsapi, bingapi) {
   return {
     scope: {
 
     },
     controller: function() {
-      this.results = ({results}) => {
-        this.articles = results;
-        this.categories = window.populateCategories(results);
+      this.results = (articles) => {
+        this.articles = articles;
+        this.categories = window.populateCategories(articles);
       };
       this.selectedCategory = null;
       this.filterCategory = (category) => {
@@ -18,7 +18,8 @@ angular.module('newsApp',[])
           this.selectedCategory = null;
         }
       };
-      nytimes.fetch(this.results);
+      // nytimes.fetch(this.results);
+      bingapi.fetch(this.results);
     },
     controllerAs: 'ctrl',
     bindToController: true,

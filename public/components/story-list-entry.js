@@ -11,11 +11,11 @@ angular.module('newsApp')
     controllerAs: 'ctrl',
     bindToController: true,
     template: '<div class="storyListEntry">\
-      <img class="thumbnail" ng-src="{{ctrl.story.thumbnail_standard}}"></img>\
-      <a class=title ng-href="{{ctrl.story.url}}">{{ctrl.story.title}}</a>\
-      <div class=section>{{ctrl.story.section}}</div>\
-      <div class=provider>{{ctrl.story.source}}</div>\
-      <div class=timestamp>{{ctrl.story.updated_date}}</div>\
+      <img class="thumbnail" ng-src="{{ctrl.story.image.thumbnail.contentUrl}}"></img>\
+      <a class=title ng-href="{{ctrl.story.url}}">{{ctrl.story.name}}</a>\
+      <div class=section>{{ctrl.story.category}}</div>\
+      <div class=provider>{{ctrl.story.provider.name}}</div>\
+      <div class=timestamp>{{ctrl.story.datePublished}}</div>\
       </div>'
   }
 })

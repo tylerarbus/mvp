@@ -9,11 +9,13 @@
 .storylist {
   /*background: lightgrey;*/
   margin-left: 10px;
+  overflow: auto;
 }
 
 .storyListEntry {
   background-color: #f5ecd9;
   margin-bottom: 10px;
+  overflow: auto;
 }
 
 .storyListEntry .title {
@@ -27,5 +29,6 @@
 
 .thumbnail {
   float: left;
-  margin-right: 10px;
+  margin: 10px;
 }
+
