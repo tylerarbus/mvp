@@ -1,0 +1,17 @@
+.title {
+  font-size: 35px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+}
+
+.storylist {
+  /*background: lightgrey;*/
+  margin-left: 10px;
+}
+
+.storyListEntry {
+  background-color: #f5ecd9;
+  margin-bottom: 10px;
+}

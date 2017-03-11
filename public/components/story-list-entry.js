@@ -10,7 +10,7 @@ angular.module('newsApp')
     },
     controllerAs: 'ctrl',
     bindToController: true,
-    template: '<div>\
+    template: '<div class="storyListEntry">\
       {{ctrl.story.title}}\
       </div>'
   }

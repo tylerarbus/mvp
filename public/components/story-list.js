@@ -10,7 +10,7 @@ angular.module('newsApp')
     },
     controllerAs: 'ctrl',
     bindToController: true,
-    template: '<div>\
+    template: '<div class="storylist">\
         <story-entry ng-repeat="story in ctrl.nytimesStories" story="story" ></story-entry>\
       </div>'
   }
