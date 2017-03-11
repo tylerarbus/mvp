@@ -15,3 +15,7 @@
   background-color: #f5ecd9;
   margin-bottom: 10px;
 }
+
+.storyListEntry .title {
+  font-size: 20px;
+}

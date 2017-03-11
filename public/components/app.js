@@ -8,6 +8,7 @@ angular.module('newsApp',[])
     controller: function() {
       this.results = ({results}) => {
         this.nytimesStories = results;
+        console.log(results);
       };
       nytimes.fetch(this.results);
       this.hello = 'hello';
