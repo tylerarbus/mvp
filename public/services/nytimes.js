@@ -14,4 +14,4 @@ angular.module('newsApp')
       console.error(err);
     })
   }
-});
+})

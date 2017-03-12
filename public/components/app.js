@@ -1,15 +1,15 @@
 angular.module('newsApp',[])
 
-.directive('app', function(nytimes, newsapi, bingapi) {
+.directive('app', function(bingapi, storyQuery) {
   return {
     scope: {
 
     },
     controller: function() {
-      this.results = (articles) => {
-        this.articles = articles;
+      this.fetch = (articles) => {
+        this.allArticles = articles;
+        this.articles = this.allArticles;
         this.categories = window.populateCategories(articles);
-        console.log(articles);
       };
       this.selectedCategory = null;
       this.filterCategory = (category) => {
@@ -21,12 +21,21 @@ angular.module('newsApp',[])
        }
       this.showSaved = false;
       this.toggleSaved = () => {
-        this.showSaved = !this.showSaved;
+        storyQuery.getStories((stories) => {
+          this.showSaved = !this.showSaved;
+          if (this.showSaved) {
+            this.articles = stories.data;
+          } else {
+            this.articles = this.allArticles;
+          }
+        })
       };
       this.saveStory = (story) => {
-        //add to saved story database
+        storyQuery.sendStory(story, () => {
+          console.log('saved!')
+        });
       }
-      bingapi.fetch(this.results);
+      bingapi.fetch(this.fetch);
     },
     controllerAs: 'ctrl',
     bindToController: true,

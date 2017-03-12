@@ -5,7 +5,7 @@ angular.module('newsApp')
     scope: {
       articles: '<',
       selectedCategory: '<',
-      saveStory: '<'
+      saveStory: '<',
     },
     controller: function() {
 
