@@ -35,6 +35,12 @@ angular.module('newsApp',[])
           console.log('saved!')
         });
       }
+      this.deleteSaved = () => {
+        storyQuery.deleteSaved(() => {
+          console.log('deleted saved links!')
+          this.toggleSaved();
+        })
+      }
       bingapi.fetch(this.fetch);
     },
     controllerAs: 'ctrl',

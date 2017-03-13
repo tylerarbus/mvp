@@ -13,5 +13,6 @@ app.use(express.static(__dirname + '/public'))
 
 app.post('/story', handler.addStory);
 app.get('/story', handler.getStories);
+app.delete('/story', handler.deleteStories);
 
 module.exports = app;

@@ -19,4 +19,14 @@ angular.module('newsApp')
       console.error(err);
     })    
   }
+  this.deleteSaved = function(callback) {
+    console.log('delete in sendStory called!')
+    $http.delete('/story')
+    .then(function(results) {
+      callback();
+    })
+    .catch(function(err){
+      console.error(err);
+    }) 
+  }
 })
